@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { PageWrapper } from "./App.styles";
 
 // Pages
-import Home from "../src/Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
