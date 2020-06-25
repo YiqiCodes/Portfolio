@@ -9,13 +9,33 @@ export const HomeContainer = styled.div`
 
 export const HalfLeft = styled.div`
   width: 50vw;
-  background: #2a5859;
+  background: #eef2ed;
+`;
+
+export const LeftTextContainer = styled.div`
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #eef2ed;
 `;
 
 export const HalfRight = styled.div`
   width: 50vw;
   background: #eef2ed;
 `;
+
+export const RightTextContainer = styled.div`
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: x-large;
+  padding-left: 5rem;
+`;
+
 export const TextContainer = styled.div`
   align-self: center;
   z-index: 1;
@@ -27,6 +47,7 @@ export const TextContainer = styled.div`
 export const NameText = styled.text`
   font-weight: 900;
   font-size: -webkit-xxx-large;
+  margin-left: 1rem;
 `;
 
 export const NameDotContainer = styled.div`
