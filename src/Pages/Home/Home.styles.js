@@ -64,3 +64,8 @@ export const Dot = styled.div`
   border-radius: 50%;
   background: #2a5859;
 `;
+
+export const RainbowDotImg = styled.img`
+  height: 100%;
+  width: 100%;
+`;
