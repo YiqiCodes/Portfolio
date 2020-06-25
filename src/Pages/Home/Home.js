@@ -11,8 +11,10 @@ import {
   NameDotContainer,
   LeftTextContainer,
   RightTextContainer,
+  RainbowDotImg,
 } from "./Home.styles.js";
 
+import Typical from "react-typical";
 import RainbowCircle from "../../Assets/RainbowCircle.png";
 
 const Home = () => {
@@ -50,6 +52,7 @@ const Home = () => {
       setTextSix(true);
     }, 8500);
   }, []);
+
   return (
     <>
       <HomeContainer>
@@ -194,25 +197,23 @@ const Home = () => {
               <NameText>Tyler </NameText>
               <NameDotContainer>
                 <NameText>Zhang </NameText>
-                <div
+                <Dot
                   style={{
-                    height: "20px",
-                    width: "20px",
-                    alignSelf: "flex-end",
-                    marginLeft: "10px",
-                    borderRadius: "50%",
+                    background: "none",
                   }}
                 >
-                  <img
-                    style={{ height: "100%", width: "100%" }}
-                    src={RainbowCircle}
-                    alt=""
-                  ></img>
-                </div>
+                  <RainbowDotImg src={RainbowCircle} alt=""></RainbowDotImg>
+                </Dot>
               </NameDotContainer>
             </TextContainer>
             <HalfRight>
-              <RightTextContainer>Full-Stack Web Developer</RightTextContainer>
+              <RightTextContainer>
+                <Typical
+                  steps={["Full-Stack Developer", 1000]}
+                  loop={Infinity}
+                  wrapper="p"
+                />
+              </RightTextContainer>
             </HalfRight>
           </>
         ) : null}
