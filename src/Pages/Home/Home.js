@@ -36,19 +36,19 @@ const Home = () => {
     setTimeout(() => {
       setTextTwo(false);
       setTextThree(true);
-    }, 4500);
+    }, 4000);
     setTimeout(() => {
       setTextThree(false);
       setTextFour(true);
-    }, 6500);
+    }, 5500);
     setTimeout(() => {
       setTextFour(false);
       setTextFive(true);
-    }, 8500);
+    }, 7000);
     setTimeout(() => {
       setTextFive(false);
       setTextSix(true);
-    }, 10500);
+    }, 8500);
   }, []);
   return (
     <>
@@ -160,7 +160,7 @@ const Home = () => {
         ) : null}
         {textFive === true ? (
           <>
-            <HalfLeft style={{ background: "#111111" }}>
+            <HalfLeft style={{ background: "#798AA7" }}>
               <LeftTextContainer>
                 <p>Western University</p>
                 <p>Ivey Business School</p>
@@ -173,7 +173,7 @@ const Home = () => {
               <NameText>Tyler </NameText>
               <NameDotContainer>
                 <NameText>Zhang </NameText>
-                <Dot style={{ background: "#111111" }} />
+                <Dot style={{ background: "#798AA7" }} />
               </NameDotContainer>
             </TextContainer>
             <HalfRight></HalfRight>
