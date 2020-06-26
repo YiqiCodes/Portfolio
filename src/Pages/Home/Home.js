@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+// Components
+
+import HeaderBar from "../../Components/HeaderBar/HeaderBar";
+
 // Styles
 import {
   HomeContainer,
@@ -56,6 +60,8 @@ const Home = () => {
   return (
     <>
       <HomeContainer>
+        <HeaderBar />
+
         {textZero === true ? (
           <>
             <HalfLeft />
@@ -63,7 +69,7 @@ const Home = () => {
               <NameText>Tyler </NameText>
               <NameDotContainer>
                 <NameText>Zhang </NameText>
-                {/* <Dot style={{ background: "#111111" }} /> */}
+                <Dot style={{ background: "#111111" }} />
               </NameDotContainer>
             </TextContainer>
             <HalfRight />
