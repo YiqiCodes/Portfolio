@@ -18,10 +18,25 @@ import {
   SocialImg,
 } from "./About.styles.js";
 
-import Resume from "../../Assets/Resume.png";
+import {
+  HalfLeft,
+  HalfRight,
+  TextContainer,
+  NameText,
+  Dot,
+  NameDotContainer,
+  RightTextContainer,
+  RainbowDotImg,
+} from "../Home/Home.styles";
 
+// API
+import Typical from "react-typical";
+
+// Images
+import RainbowCircle from "../../Assets/RainbowCircle.png";
+import Resume from "../../Assets/Resume.png";
 import Yiqi from "../../Assets/Yiqi.jpg";
-import Github from "../../Assets/Github.png";
+import Github from "../../Assets/Github2.png";
 import LinkedIn from "../../Assets/LinkedIn2.png";
 import Instagram from "../../Assets/Instagram.png";
 import Youtube from "../../Assets/Youtube3.png";
@@ -44,24 +59,25 @@ const About = () => {
           </Details>
         </DetailsContainer>
         <SummaryContainer>
-          Accountant turned photographer turned programmer <br></br>
+          Accountant turned photographer turned programmer. <br></br>
           <br></br>
           After travelling the world for a year in 2019, I've realized that I
           want to live each and every day at the intersection of art and
           technology. This is why I fell in love with web development. <br></br>
           <br></br>I want to bring my passion and energy to a company that is
-          doing meaningful work and striving to create value for society{" "}
+          doing meaningful work and striving to create value for society.
           <br></br>
         </SummaryContainer>
         <BottomContainer>
           <ResumeContainer>
+            Resume:
             <a
-              href="https://www.youtube.com/channel/UCNZRyhQRcmYbc9NAqvu-jsw?view_as=subscriber"
+              href="https://www.linkedin.com/in/yiqi-tyler-zhang/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAAuCy7QBg7x1U1vrgmjMkQ5il-3IH0JKjcs,1590174302597)/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SocialImg
-                style={{ width: "100px", height: "100px", padding: "10px" }}
+                style={{ width: "80px", height: "80px", padding: "10px" }}
                 src={Resume}
                 alt=""
               ></SocialImg>
@@ -106,6 +122,29 @@ const About = () => {
           </SocialsContainer>
         </BottomContainer>
       </AboutContentContainer>
+      <HalfLeft />
+      <TextContainer>
+        <NameText>Tyler </NameText>
+        <NameDotContainer>
+          <NameText>Zhang </NameText>
+          <Dot
+            style={{
+              background: "none",
+            }}
+          >
+            <RainbowDotImg src={RainbowCircle} alt=""></RainbowDotImg>
+          </Dot>
+        </NameDotContainer>
+      </TextContainer>
+      <HalfRight style={{ height: "100vh" }}>
+        <RightTextContainer>
+          <Typical
+            steps={["Full-Stack Developer", 1000]}
+            loop={Infinity}
+            wrapper="p"
+          />
+        </RightTextContainer>
+      </HalfRight>
     </AboutContainer>
   );
 };
