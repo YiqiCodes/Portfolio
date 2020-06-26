@@ -12,29 +12,47 @@ export const AboutContainer = styled.div`
 export const DetailsContainer = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 30%;
   background: transparent;
 `;
 export const AboutContentContainer = styled.div`
   width: 50%;
-  height: 80%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  color: #eef2ed;
 `;
 
 export const SummaryContainer = styled.div`
   background: transparent;
-  padding: 1rem;
+  padding: 0 2rem;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 export const BottomContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 20%;
-  width: 100%;
+  width: 50vw;
+  padding: 4px 0;
 `;
 export const ResumeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100%;
-  width: 40%;
   padding: 0.5rem;
 `;
 export const SocialsContainer = styled.div`
@@ -43,7 +61,6 @@ export const SocialsContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
-  width: 60%;
   padding: 0.5rem;
 `;
 
