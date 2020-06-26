@@ -7,14 +7,22 @@ import { PageWrapper } from "./App.styles";
 
 // Pages
 import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About.js";
+import Portfolio from "./Pages/Portfolio/Portfolio.js";
 
 function App() {
   return (
     <Router>
       <Switch>
         <PageWrapper>
-          <Route exact Path="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/portfolio">
+            <Portfolio />
           </Route>
         </PageWrapper>
       </Switch>

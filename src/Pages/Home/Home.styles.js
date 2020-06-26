@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
 
 export const HalfLeft = styled.div`
   width: 50vw;
-  background: #eef2ed;
+  background: #111111;
 `;
 
 export const LeftTextContainer = styled.div`
@@ -62,7 +62,6 @@ export const Dot = styled.div`
   align-self: flex-end;
   margin-left: 10px;
   border-radius: 50%;
-  background: #2a5859;
 `;
 
 export const RainbowDotImg = styled.img`
