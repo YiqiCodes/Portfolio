@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 // Components
-
 import HeaderBar from "../../Components/HeaderBar/HeaderBar";
 
 // Styles
