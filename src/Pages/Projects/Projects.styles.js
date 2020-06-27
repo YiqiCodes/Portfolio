@@ -22,6 +22,9 @@ export const ProjectContainer = styled.div`
 export const ProjectContainerRight = styled.div`
   width: 50vw;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #eef2ed;
 `;
 
@@ -33,7 +36,7 @@ export const Project = styled.div`
 `;
 
 export const ProjectImgDiv = styled.div`
-  height: 30%;
+  height: 35%;
   padding: 5px;
   display: flex;
   justify-content: flex-end;
