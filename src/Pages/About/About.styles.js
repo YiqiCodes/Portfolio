@@ -17,6 +17,12 @@ export const DetailsContainer = styled.div`
   width: 50vw;
   height: 30%;
   background: transparent;
+  @media screen and (max-width: 767px) {
+    font-size: small;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: x-small;
+  }
 `;
 export const AboutContentContainer = styled.div`
   width: 50%;
@@ -39,6 +45,13 @@ export const SummaryContainer = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    color: transparent;
+    height: 0px;
+  }
+  @media screen and (max-height: 575px) {
+    color: transparent;
+  }
 `;
 export const BottomContainer = styled.div`
   display: flex;
@@ -67,6 +80,10 @@ export const SocialsContainer = styled.div`
 export const ProfilePictureContainer = styled.img`
   width: 8rem;
   height: 10rem;
+  @media screen and (max-width: 767px) {
+    width: 0px;
+    height: 0px;
+  }
 `;
 
 export const Details = styled.div`

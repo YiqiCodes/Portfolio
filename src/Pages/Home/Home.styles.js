@@ -20,6 +20,7 @@ export const LeftTextContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   color: #eef2ed;
+  text-align: center;
 `;
 
 export const HalfRight = styled.div`
@@ -34,6 +35,9 @@ export const RightTextContainer = styled.div`
   align-items: flex-end;
   font-size: x-large;
   padding-left: 5rem;
+  @media screen and (max-width: 767px) {
+    font-size: small;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -48,6 +52,9 @@ export const NameText = styled.text`
   font-weight: 900;
   font-size: -webkit-xxx-large;
   margin-left: 1rem;
+  @media screen and (max-width: 767px) {
+    font-size: large;
+  }
 `;
 
 export const NameDotContainer = styled.div`

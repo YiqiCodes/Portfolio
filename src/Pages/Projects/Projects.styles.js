@@ -37,7 +37,10 @@ export const Project = styled.div`
 `;
 
 export const ProjectImgDiv = styled.div`
+  overflow: auto;
+  white-space: nowrap;
   height: 35%;
+  max-width: 50vw;
   padding: 5px;
   display: flex;
   justify-content: flex-end;
@@ -72,6 +75,7 @@ export const TextOne = styled.div`
   justify-content: flex-end;
   padding: 4px 0;
   text-align: end;
+  padding-right: 10px;
 `;
 
 export const TextTwo = styled.div`
@@ -81,12 +85,14 @@ export const TextTwo = styled.div`
   display: flex;
   justify-content: flex-end;
   text-align: end;
+  padding-right: 10px;
 `;
 export const TextThree = styled.div`
   font-size: small;
   display: flex;
   justify-content: flex-end;
   text-align: end;
+  padding-right: 10px;
 `;
 
 export const TextThreeDiv = styled.div`
@@ -96,14 +102,18 @@ export const TextThreeDiv = styled.div`
   align-self: flex-end;
   width: 90%;
   min-height: 20%;
+  padding-right: 10px;
 `;
 
 export const ProjectButton = styled.button`
-  width: 30%;
+  width: 35%;
   height: 2rem;
-  margin: 8px 0px;
-  padding: 2px 4px;
+  margin: 8px 4px;
+  padding: 4px 8px;
   border-radius: 4px;
   background: #111111;
   color: #eef2ed;
+  @media screen and (max-width: 767px) {
+    width: 10rem;
+  }
 `;
