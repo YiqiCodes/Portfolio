@@ -124,12 +124,26 @@ export const TextThreeDiv = styled.div`
 
 export const ProjectButton = styled.button`
   width: 35%;
-  height: 2rem;
-  margin: 8px 4px;
   padding: 4px 8px;
-  border-radius: 4px;
-  background: #111111;
+  margin: 8px 4px;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #535353 5%, #111111 100%);
+  background-color: #535353;
+  border-radius: 15px;
+  border: 2px solid #333029;
+  display: inline-block;
+  cursor: pointer;
   color: #eef2ed;
+  font-family: spartan;
+  font-size: 14px;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+
+  :hover {
+    background: linear-gradient(to bottom, #111111 5%, #535353 100%);
+    background-color: #111111;
+  }
   @media screen and (max-width: 767px) {
     width: 10rem;
   }
