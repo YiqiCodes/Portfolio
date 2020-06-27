@@ -17,6 +17,7 @@ import {
   TextThree,
   TextThreeDiv,
   ProjectContainerRight,
+  ProjectButton,
 } from "./Projects.styles";
 
 import { SocialImg } from "../../Pages/About/About.styles";
@@ -83,7 +84,11 @@ const Projects = () => {
               </TextOneDiv>
               <TextTwo>A Comphrensive Financial Literacy App</TextTwo>
               <ProjectImgDiv>
-                <ProjectImg src={PiggyBank} alt=""></ProjectImg>
+                <ProjectImg
+                  style={{ height: "65%" }}
+                  src={PiggyBank}
+                  alt=""
+                ></ProjectImg>
               </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
@@ -207,9 +212,9 @@ const Projects = () => {
               </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
-                  No backend functionality! Just practicing front-end.
+                  No backend functionality! Just practicing front-end
                 </TextThree>
-                <TextThree>Best viewed on mobile.</TextThree>
+                <TextThree>Best viewed on mobile</TextThree>
                 <TextThree>Built with: React</TextThree>
                 <TextThree>
                   <a
@@ -323,7 +328,6 @@ const Projects = () => {
                   Built with Node.js, express.js, jQuery, Twilio API & Google
                   Maps API
                 </TextThree>
-
                 <TextThree>
                   <a
                     href="https://rumours.herokuapp.com/"
@@ -376,7 +380,7 @@ const Projects = () => {
                   Let's find out!
                 </TextThree>
                 <TextThree>
-                  ** If no data shows, let me know because the API is limited.
+                  ** If no data shows, let me know because the API is limited
                 </TextThree>
                 <TextThree>
                   Built with React, Financial Modelling Prep API
@@ -420,9 +424,9 @@ const Projects = () => {
               <TextThreeDiv>
                 <TextThree>
                   Submit some text and our sentiment analysis will derive your
-                  emotional tone!
+                  emotional tone
                 </TextThree>
-                <TextThree>IN PROGRESS!</TextThree>
+                <TextThree>CURRENTLY IN PROGRESS</TextThree>
                 <TextThree>
                   Built with React, Node.js, express.js & PSQL
                 </TextThree>
@@ -442,13 +446,15 @@ const Projects = () => {
         ) : null}
       </ProjectContainer>
       <ProjectContainerRight>
-        <button onClick={handeClickOne}>PiggyBank</button>
-        <button onClick={handeClickTwo}>Kard</button>
-        <button onClick={handeClickFive}>Rumours</button>
-        <button onClick={handeClickThree}>Instagram</button>
-        <button onClick={handeClickFour}>Catan Scoreboard</button>
-        <button onClick={handeClickSix}>Stock or Product</button>
-        <button onClick={handeClickSeven}>Sentiment Analysis</button>
+        <ProjectButton onClick={handeClickOne}>PiggyBank</ProjectButton>
+        <ProjectButton onClick={handeClickTwo}>Kard</ProjectButton>
+        <ProjectButton onClick={handeClickFive}>Rumours</ProjectButton>
+        <ProjectButton onClick={handeClickThree}>Instagram</ProjectButton>
+        <ProjectButton onClick={handeClickFour}>Catan Scoreboard</ProjectButton>
+        <ProjectButton onClick={handeClickSix}>Stock or Product</ProjectButton>
+        <ProjectButton onClick={handeClickSeven}>
+          Sentiment Analysis
+        </ProjectButton>
       </ProjectContainerRight>
     </ProjectsContainer>
   );
