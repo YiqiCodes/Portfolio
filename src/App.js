@@ -8,7 +8,7 @@ import { PageWrapper } from "./App.styles";
 // Pages
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About.js";
-import Portfolio from "./Pages/Portfolio/Portfolio.js";
+import Projects from "./Pages/Projects/Projects.js";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/portfolio">
-            <Portfolio />
+          <Route exact path="/projects">
+            <Projects />
           </Route>
         </PageWrapper>
       </Switch>
