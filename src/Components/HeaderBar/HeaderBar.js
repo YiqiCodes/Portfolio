@@ -8,7 +8,7 @@ const HeaderBar = () => {
     <HeaderContainer>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-      <Link to="/portfolio">Portfolio</Link>
+      <Link to="/projects">Projects</Link>
       <a
         href="https://www.yiqizhangphotography.com"
         target="_blank"
