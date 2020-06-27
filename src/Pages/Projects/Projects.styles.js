@@ -37,14 +37,20 @@ export const Project = styled.div`
 `;
 
 export const ProjectImgDiv = styled.div`
-  overflow: auto;
-  white-space: nowrap;
   height: 35%;
   max-width: 50vw;
   padding: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (max-height: 575px) {
+    height: 0px;
+    width: 0px;
+  }
 `;
 
 export const ProjectImg = styled.img`
@@ -76,6 +82,9 @@ export const TextOne = styled.div`
   padding: 4px 0;
   text-align: end;
   padding-right: 10px;
+  @media screen and (max-width: 767px) {
+    font-size: small;
+  }
 `;
 
 export const TextTwo = styled.div`
@@ -86,6 +95,9 @@ export const TextTwo = styled.div`
   justify-content: flex-end;
   text-align: end;
   padding-right: 10px;
+  @media screen and (max-width: 767px) {
+    font-size: x-small;
+  }
 `;
 export const TextThree = styled.div`
   font-size: small;
@@ -93,6 +105,11 @@ export const TextThree = styled.div`
   justify-content: flex-end;
   text-align: end;
   padding-right: 10px;
+  @media screen and (max-width: 767px) {
+    font-size: xx-small;
+    margin: 10px 0px;
+    width: 100%;
+  }
 `;
 
 export const TextThreeDiv = styled.div`
