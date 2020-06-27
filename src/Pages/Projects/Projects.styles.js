@@ -23,6 +23,7 @@ export const ProjectContainerRight = styled.div`
   width: 50vw;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #eef2ed;
@@ -95,4 +96,14 @@ export const TextThreeDiv = styled.div`
   align-self: flex-end;
   width: 90%;
   min-height: 20%;
+`;
+
+export const ProjectButton = styled.button`
+  width: 30%;
+  height: 2rem;
+  margin: 8px 0px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: #111111;
+  color: #eef2ed;
 `;
