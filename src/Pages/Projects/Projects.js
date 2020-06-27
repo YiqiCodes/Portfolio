@@ -28,16 +28,12 @@ import Github from "../../Assets/Github2.png";
 import KardMain from "../../Assets/KardMain2.png";
 import KardMain2 from "../../Assets/KardSearch3.png";
 import Instagram from "../../Assets/Instagram1.png";
-import Instagram2 from "../../Assets/Instagram2.png";
-import Instagram3 from "../../Assets/Instagram3.png";
 import Instagram4 from "../../Assets/Instagram4.png";
 import Catan1 from "../../Assets/Catan1.png";
-import Catan2 from "../../Assets/Catan2.png";
 import Rumours1 from "../../Assets/Rumours1.png";
+import Rumours2 from "../../Assets/Rumours2.png";
 import Apple from "../../Assets/Apple1.png";
 import Google from "../../Assets/Google1.png";
-import Samsung from "../../Assets/Samsung1.png";
-import Sentiment from "../../Assets/SentimentGreat.png";
 
 const Projects = () => {
   const [project, setProject] = useState(0);
@@ -190,22 +186,21 @@ const Projects = () => {
               <TextTwo>Building a replica of Instagram</TextTwo>
               <ProjectImgDiv>
                 <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
+                  style={{
+                    height: "100%",
+                    paddingRight: "4px",
+                    maxWidth: "350px",
+                  }}
                   src={Instagram}
                   alt=""
                 ></ProjectImg>
+
                 <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
-                  src={Instagram2}
-                  alt=""
-                ></ProjectImg>
-                <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
-                  src={Instagram3}
-                  alt=""
-                ></ProjectImg>
-                <ProjectImg
-                  style={{ height: "100%", paddingLeft: "4px" }}
+                  style={{
+                    height: "100%",
+                    paddingLeft: "4px",
+                    maxWidth: "350px",
+                  }}
                   src={Instagram4}
                   alt=""
                 ></ProjectImg>
@@ -247,13 +242,12 @@ const Projects = () => {
               <TextTwo>To keep track of score for the boys</TextTwo>
               <ProjectImgDiv>
                 <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
+                  style={{
+                    height: "100%",
+                    paddingRight: "4px",
+                    maxWidth: "350px",
+                  }}
                   src={Catan1}
-                  alt=""
-                ></ProjectImg>
-                <ProjectImg
-                  style={{ height: "100%", paddingLeft: "4px" }}
-                  src={Catan2}
                   alt=""
                 ></ProjectImg>
               </ProjectImgDiv>
@@ -309,6 +303,11 @@ const Projects = () => {
                 <ProjectImg
                   style={{ height: "100%", paddingRight: "4px" }}
                   src={Rumours1}
+                  alt=""
+                ></ProjectImg>
+                <ProjectImg
+                  style={{ height: "100%", paddingRight: "4px" }}
+                  src={Rumours2}
                   alt=""
                 ></ProjectImg>
               </ProjectImgDiv>
@@ -368,11 +367,6 @@ const Projects = () => {
                   src={Google}
                   alt=""
                 ></ProjectImg>
-                <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
-                  src={Samsung}
-                  alt=""
-                ></ProjectImg>
               </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
@@ -414,13 +408,13 @@ const Projects = () => {
                 <TextOne>Analyze My Sentiment</TextOne>
               </TextOneDiv>
               <TextTwo>How are you feeling?</TextTwo>
-              <ProjectImgDiv>
+              {/* <ProjectImgDiv>
                 <ProjectImg
                   style={{ height: "100%", paddingRight: "4px" }}
                   src={Sentiment}
                   alt=""
                 ></ProjectImg>
-              </ProjectImgDiv>
+              </ProjectImgDiv> */}
               <TextThreeDiv>
                 <TextThree>
                   Submit some text and our sentiment analysis will derive your
