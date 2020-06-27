@@ -408,13 +408,6 @@ const Projects = () => {
                 <TextOne>Analyze My Sentiment</TextOne>
               </TextOneDiv>
               <TextTwo>How are you feeling?</TextTwo>
-              {/* <ProjectImgDiv>
-                <ProjectImg
-                  style={{ height: "100%", paddingRight: "4px" }}
-                  src={Sentiment}
-                  alt=""
-                ></ProjectImg>
-              </ProjectImgDiv> */}
               <TextThreeDiv>
                 <TextThree>
                   Submit some text and our sentiment analysis will derive your
