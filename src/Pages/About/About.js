@@ -91,7 +91,6 @@ const About = () => {
             >
               <SocialImg src={Github} alt=""></SocialImg>
             </a>
-
             <SocialIconDiv>
               <a
                 href="https://www.linkedin.com/in/yiqi-tyler-zhang/"

@@ -9,4 +9,9 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    background: #eef2ed;
+    z-index: 1;
+  }
 `;
