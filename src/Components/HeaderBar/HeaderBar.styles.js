@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 767px) {
     width: 100%;
-    background: #eef2ed;
+    background: #f1f1f1;
     z-index: 1;
   }
 `;

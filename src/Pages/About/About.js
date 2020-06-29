@@ -49,8 +49,8 @@ const About = () => {
         <DetailsContainer>
           <ProfilePictureContainer src={Yiqi} alt=""></ProfilePictureContainer>
           <Details>
-            Tyler Zhang<br></br>
-            <br></br>
+            {/* Tyler Zhang<br></br>
+            <br></br> */}
             Location: Toronto <br></br>
             <br></br>
             Phone: 613-371-4897<br></br>
