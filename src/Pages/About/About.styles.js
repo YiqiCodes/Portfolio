@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #eef2ed;
+  background: #f1f1f1;
 `;
 
 export const DetailsContainer = styled.div`
@@ -34,13 +34,14 @@ export const AboutContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #111111;
-  color: #eef2ed;
+  color: #f1f1f1;
 `;
 
 export const SummaryContainer = styled.div`
   background: transparent;
-  padding: 0 2rem;
+  padding: 2px 2rem;
   height: 30%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -19,13 +19,13 @@ export const LeftTextContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #eef2ed;
+  color: #f1f1f1;
   text-align: center;
 `;
 
 export const HalfRight = styled.div`
   width: 50vw;
-  background: #eef2ed;
+  background: #f1f1f1;
 `;
 
 export const RightTextContainer = styled.div`

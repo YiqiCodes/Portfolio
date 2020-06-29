@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #eef2ed;
+  background: #f1f1f1;
 `;
 
 export const ProjectContainer = styled.div`
@@ -16,7 +16,7 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   background: #111111;
-  color: #eef2ed;
+  color: #f1f1f1;
 `;
 
 export const ProjectContainerRight = styled.div`
@@ -26,7 +26,7 @@ export const ProjectContainerRight = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #eef2ed;
+  background: #f1f1f1;
 `;
 
 export const Project = styled.div`
@@ -133,7 +133,7 @@ export const ProjectButton = styled.button`
   border: 2px solid #333029;
   display: inline-block;
   cursor: pointer;
-  color: #eef2ed;
+  color: #f1f1f1;
   font-family: spartan;
   font-size: 14px;
   padding: 12px 16px;

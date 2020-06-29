@@ -59,6 +59,9 @@ const Projects = () => {
   const handeClickSeven = () => {
     setProject(7);
   };
+  const handeClickEight = () => {
+    setProject(8);
+  };
 
   return (
     <ProjectsContainer>
@@ -431,6 +434,39 @@ const Projects = () => {
             </ProjectDetailsDiv>
           </Project>
         ) : null}
+        {project === 8 ? (
+          <Project>
+            <ProjectDetailsDiv>
+              <TextOneDiv>
+                {/* <a
+                  href="https://github.com/TylerZhang00/SentimentAnalysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ padding: "2px 8px" }}
+                > */}
+                <SocialImg src={Github} alt=""></SocialImg>
+                {/* </a> */}
+                <TextOne>Battleship</TextOne>
+              </TextOneDiv>
+              <TextTwo>Bounce 'em in to sink and win!</TextTwo>
+              <TextThreeDiv>
+                <TextThree>Building a battleship game with React</TextThree>
+                <TextThree>CURRENTLY IN PROGRESS</TextThree>
+                <TextThree>Built with React</TextThree>
+                <TextThree>
+                  {/* <a
+                    href="https://analyzemysentiment.netlify.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "white" }}
+                  >
+                    Deployed with Netlify
+                  </a> */}
+                </TextThree>
+              </TextThreeDiv>
+            </ProjectDetailsDiv>
+          </Project>
+        ) : null}
       </ProjectContainer>
       <ProjectContainerRight>
         <ProjectButton onClick={handeClickOne}>PiggyBank</ProjectButton>
@@ -442,6 +478,7 @@ const Projects = () => {
         <ProjectButton onClick={handeClickSeven}>
           Sentiment Analysis
         </ProjectButton>
+        <ProjectButton onClick={handeClickEight}>Battleship</ProjectButton>
       </ProjectContainerRight>
     </ProjectsContainer>
   );
