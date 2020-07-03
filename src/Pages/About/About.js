@@ -70,9 +70,9 @@ const About = () => {
         </SummaryContainer>
         <BottomContainer>
           <ResumeContainer>
-            Resume:
+            Resume (click accessibility mode):
             <a
-              href="https://www.linkedin.com/in/yiqi-tyler-zhang/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAAuCy7QBg7x1U1vrgmjMkQ5il-3IH0JKjcs,1590174302597)/"
+              href="https://www.linkedin.com/in/yiqi-tyler-zhang/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAAuCy7QBg7x1U1vrgmjMkQ5il-3IH0JKjcs,1593795077157)/"
               target="_blank"
               rel="noopener noreferrer"
             >

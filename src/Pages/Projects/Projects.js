@@ -34,6 +34,7 @@ import Rumours1 from "../../Assets/Rumours1.png";
 import Rumours2 from "../../Assets/Rumours2.png";
 import Apple from "../../Assets/Apple1.png";
 import Google from "../../Assets/Google1.png";
+import Sentiment from "../../Assets/SentimentMain3.png";
 
 const Projects = () => {
   const [project, setProject] = useState(0);
@@ -92,9 +93,9 @@ const Projects = () => {
               <TextThreeDiv>
                 <TextThree>
                   Set financial goals, track your expenses, obtain a customized
-                  investment portfolio, and create a state of the art budget to
+                  investment portfolio, & create a state of the art budget to
                   help meet your goals. In addition, PiggyBank also has a built
-                  in news component, youtube channel, and education section.
+                  in news component, youtube channel, & education section.
                 </TextThree>
                 <TextThree>
                   Everything is customizable based on your inputs.
@@ -147,11 +148,11 @@ const Projects = () => {
               </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
-                  Pick your favourite album, book, movie and restaurant and let
-                  the world know.
+                  Pick your favourite album, book, movie & restaurant & let the
+                  world know.
                 </TextThree>
                 <TextThree>
-                  Login and register to save your choices and obtain a unique
+                  Login & register to save your choices & obtain a unique
                   shareable link to share your Kard with your friends!
                 </TextThree>
                 <TextThree>
@@ -256,7 +257,7 @@ const Projects = () => {
               </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
-                  Adding and remove scores for games. The data is saved onto the
+                  Adding & remove scores for games. The data is saved onto the
                   heroku server.
                 </TextThree>
                 <TextThree>
@@ -317,12 +318,12 @@ const Projects = () => {
               <TextThreeDiv>
                 <TextThree>
                   A restaurant application that allows the customer to select
-                  items from a menu and place an order. Upon placing an order,
-                  the restaurant will receive an order confirmation text while
-                  the customer will receive a confirmation call.
+                  items from a menu & place an order. Upon placing an order, the
+                  restaurant will receive an order confirmation text while the
+                  customer will receive a confirmation call.
                 </TextThree>
                 <TextThree>
-                  An order summary will then display on the app and a map will
+                  An order summary will then display on the app & a map will
                   render showing the directions from the customer's address to
                   Rumours.
                 </TextThree>
@@ -411,12 +412,18 @@ const Projects = () => {
                 <TextOne>Analyze My Sentiment</TextOne>
               </TextOneDiv>
               <TextTwo>How are you feeling?</TextTwo>
+              <ProjectImgDiv>
+                <ProjectImg
+                  style={{ height: "100%", paddingRight: "4px" }}
+                  src={Sentiment}
+                  alt=""
+                ></ProjectImg>
+              </ProjectImgDiv>
               <TextThreeDiv>
                 <TextThree>
-                  Submit some text and our sentiment analysis will derive your
+                  Submit some text & our sentiment analysis will derive your
                   emotional tone
                 </TextThree>
-                <TextThree>CURRENTLY IN PROGRESS</TextThree>
                 <TextThree>
                   Built with React, Node.js, express.js & PSQL
                 </TextThree>
@@ -448,7 +455,7 @@ const Projects = () => {
                 {/* </a> */}
                 <TextOne>Battleship</TextOne>
               </TextOneDiv>
-              <TextTwo>Bounce 'em in to sink and win!</TextTwo>
+              <TextTwo>Bounce 'em in to sink & win!</TextTwo>
               <TextThreeDiv>
                 <TextThree>Building a battleship game with React</TextThree>
                 <TextThree>CURRENTLY IN PROGRESS</TextThree>
@@ -471,13 +478,13 @@ const Projects = () => {
       <ProjectContainerRight>
         <ProjectButton onClick={handeClickOne}>PiggyBank</ProjectButton>
         <ProjectButton onClick={handeClickTwo}>Kard</ProjectButton>
+        <ProjectButton onClick={handeClickSeven}>
+          Analyze My Sentiment
+        </ProjectButton>
         <ProjectButton onClick={handeClickFive}>Rumours</ProjectButton>
         <ProjectButton onClick={handeClickThree}>Instagram</ProjectButton>
         <ProjectButton onClick={handeClickFour}>Catan Scoreboard</ProjectButton>
         <ProjectButton onClick={handeClickSix}>Stock or Product</ProjectButton>
-        <ProjectButton onClick={handeClickSeven}>
-          Sentiment Analysis
-        </ProjectButton>
         <ProjectButton onClick={handeClickEight}>Battleship</ProjectButton>
       </ProjectContainerRight>
     </ProjectsContainer>

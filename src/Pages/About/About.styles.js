@@ -76,6 +76,8 @@ export const SocialsContainer = styled.div`
   justify-content: space-evenly;
   height: 100%;
   padding: 0.5rem;
+  width: 50%;
+  align-self: center;
 `;
 
 export const ProfilePictureContainer = styled.img`
@@ -95,4 +97,5 @@ export const SocialIconDiv = styled.div``;
 export const SocialImg = styled.img`
   width: 25px;
   height: 25px;
+  padding: 5px;
 `;
