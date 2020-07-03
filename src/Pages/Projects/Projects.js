@@ -35,6 +35,8 @@ import Rumours2 from "../../Assets/Rumours2.png";
 import Apple from "../../Assets/Apple1.png";
 import Google from "../../Assets/Google1.png";
 import Sentiment from "../../Assets/SentimentMain3.png";
+import Scheduler from "../../Assets/Scheduler - Add.png";
+import Jungle from "../../Assets/JungleRails.png";
 
 const Projects = () => {
   const [project, setProject] = useState(0);
@@ -62,6 +64,14 @@ const Projects = () => {
   };
   const handeClickEight = () => {
     setProject(8);
+  };
+
+  const handeClickNine = () => {
+    setProject(9);
+  };
+
+  const handeClickTen = () => {
+    setProject(10);
   };
 
   return (
@@ -445,14 +455,7 @@ const Projects = () => {
           <Project>
             <ProjectDetailsDiv>
               <TextOneDiv>
-                {/* <a
-                  href="https://github.com/TylerZhang00/SentimentAnalysis"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ padding: "2px 8px" }}
-                > */}
                 <SocialImg src={Github} alt=""></SocialImg>
-                {/* </a> */}
                 <TextOne>Battleship</TextOne>
               </TextOneDiv>
               <TextTwo>Bounce 'em in to sink & win!</TextTwo>
@@ -460,16 +463,83 @@ const Projects = () => {
                 <TextThree>Building a battleship game with React</TextThree>
                 <TextThree>CURRENTLY IN PROGRESS</TextThree>
                 <TextThree>Built with React</TextThree>
+                <TextThree></TextThree>
+              </TextThreeDiv>
+            </ProjectDetailsDiv>
+          </Project>
+        ) : null}
+        {project === 9 ? (
+          <Project>
+            <ProjectDetailsDiv>
+              <TextOneDiv>
+                <a
+                  href="https://github.com/TylerZhang00/scheduler"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ padding: "2px 8px" }}
+                >
+                  <SocialImg src={Github} alt=""></SocialImg>
+                </a>
+                <TextOne>Interview Scheduler</TextOne>
+              </TextOneDiv>
+              <TextTwo>Schedule an interview!</TextTwo>
+              <ProjectImgDiv>
+                <ProjectImg
+                  style={{ height: "100%", paddingRight: "4px" }}
+                  src={Scheduler}
+                  alt=""
+                ></ProjectImg>
+              </ProjectImgDiv>
+              <TextThreeDiv>
                 <TextThree>
-                  {/* <a
-                    href="https://analyzemysentiment.netlify.com/"
+                  Schedule, edit, & delete interviews throughout the week!
+                </TextThree>
+                <TextThree>
+                  Built with React.js, Node.js, express.js, & PSQL
+                </TextThree>
+                <TextThree>
+                  <a
+                    href="https://interviewsscheduler.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: "white" }}
                   >
-                    Deployed with Netlify
-                  </a> */}
+                    Deployed with Netlify (allow 15 seconds for back-end to
+                    load)
+                  </a>
                 </TextThree>
+              </TextThreeDiv>
+            </ProjectDetailsDiv>
+          </Project>
+        ) : null}
+        {project === 10 ? (
+          <Project>
+            <ProjectDetailsDiv>
+              <TextOneDiv>
+                <a
+                  href="https://github.com/TylerZhang00/jungle-rails"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ padding: "2px 8px" }}
+                >
+                  <SocialImg src={Github} alt=""></SocialImg>
+                </a>
+                <TextOne>Jungle Rails</TextOne>
+              </TextOneDiv>
+              <TextTwo>An e-commerce store built with Rails.</TextTwo>
+              <ProjectImgDiv>
+                <ProjectImg
+                  style={{ height: "100%", paddingRight: "4px" }}
+                  src={Jungle}
+                  alt=""
+                ></ProjectImg>
+              </ProjectImgDiv>
+              <TextThreeDiv>
+                <TextThree>
+                  This e-commerce application was built for the purposes of
+                  learning Rails.
+                </TextThree>
+                <TextThree>Built with Ruby on Rails, & PSQL</TextThree>
               </TextThreeDiv>
             </ProjectDetailsDiv>
           </Project>
@@ -485,6 +555,10 @@ const Projects = () => {
         <ProjectButton onClick={handeClickThree}>Instagram</ProjectButton>
         <ProjectButton onClick={handeClickFour}>Catan Scoreboard</ProjectButton>
         <ProjectButton onClick={handeClickSix}>Stock or Product</ProjectButton>
+        <ProjectButton onClick={handeClickNine}>
+          Interview Scheduler
+        </ProjectButton>
+        <ProjectButton onClick={handeClickTen}>Jungle Rails</ProjectButton>
         <ProjectButton onClick={handeClickEight}>Battleship</ProjectButton>
       </ProjectContainerRight>
     </ProjectsContainer>
