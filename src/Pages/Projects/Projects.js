@@ -37,6 +37,7 @@ import Google from "../../Assets/Google1.png";
 import Sentiment from "../../Assets/SentimentMain3.png";
 import Scheduler from "../../Assets/Scheduler - Add.png";
 import Jungle from "../../Assets/JungleRails.png";
+import BattleshipImg from "../../Assets/main.png";
 
 const Projects = () => {
   const [project, setProject] = useState(0);
@@ -455,15 +456,40 @@ const Projects = () => {
           <Project>
             <ProjectDetailsDiv>
               <TextOneDiv>
-                <SocialImg src={Github} alt=""></SocialImg>
+                <a
+                  href="https://github.com/TylerZhang00/Battleship"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ padding: "2px 8px" }}
+                >
+                  <SocialImg src={Github} alt=""></SocialImg>
+                </a>
                 <TextOne>Battleship</TextOne>
               </TextOneDiv>
               <TextTwo>Bounce 'em in to sink & win!</TextTwo>
+              <ProjectImgDiv>
+                <ProjectImg
+                  style={{ height: "100%", paddingRight: "4px" }}
+                  src={BattleshipImg}
+                  alt=""
+                ></ProjectImg>
+              </ProjectImgDiv>
               <TextThreeDiv>
-                <TextThree>Building a battleship game with React</TextThree>
-                <TextThree>CURRENTLY IN PROGRESS</TextThree>
+                <TextThree>
+                  Position your boats and choose from three difficulties! Sink
+                  or be sunk!
+                </TextThree>
                 <TextThree>Built with React</TextThree>
-                <TextThree></TextThree>
+                <TextThree>
+                  <a
+                    href="https://playbattleship.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "white" }}
+                  >
+                    Deployed with Netlify
+                  </a>
+                </TextThree>
               </TextThreeDiv>
             </ProjectDetailsDiv>
           </Project>
@@ -553,13 +579,13 @@ const Projects = () => {
         </ProjectButton>
         <ProjectButton onClick={handeClickFive}>Rumours</ProjectButton>
         <ProjectButton onClick={handeClickThree}>Instagram</ProjectButton>
+        <ProjectButton onClick={handeClickEight}>Battleship</ProjectButton>
         <ProjectButton onClick={handeClickFour}>Catan Scoreboard</ProjectButton>
         <ProjectButton onClick={handeClickSix}>Stock or Product</ProjectButton>
         <ProjectButton onClick={handeClickNine}>
           Interview Scheduler
         </ProjectButton>
         <ProjectButton onClick={handeClickTen}>Jungle Rails</ProjectButton>
-        <ProjectButton onClick={handeClickEight}>Battleship</ProjectButton>
       </ProjectContainerRight>
     </ProjectsContainer>
   );
